@@ -10,7 +10,7 @@
 
 BUILD_NUMBER="${1:?Specify build number}"
 LINUX_ZIP=/tmp/$$.linux.zip
-#DARWIN_ZIP=/tmp/$$.darwin.zip
+DARWIN_ZIP=/tmp/$$.darwin.zip
 
 FETCH_ARTIFACT=/google/data/ro/projects/android/fetch_artifact
 cd "$(dirname $0)"
@@ -19,7 +19,7 @@ rm -rf staging
 mkdir -p staging
 
 $FETCH_ARTIFACT --bid ${BUILD_NUMBER} --disable_progressbar --target linux_openjdk17 jdk.zip ${LINUX_ZIP}
-#$FETCH_ARTIFACT --bid ${BUILD_NUMBER} --disable_progressbar --target darwin_mac_openjdk17 jdk.zip ${DARWIN_ZIP}
+$FETCH_ARTIFACT --bid ${BUILD_NUMBER} --disable_progressbar --target darwin_mac_openjdk17 jdk.zip ${DARWIN_ZIP}
 $FETCH_ARTIFACT --bid ${BUILD_NUMBER} --disable_progressbar --target linux_openjdk17 manifest_${BUILD_NUMBER}.xml staging/manifest.xml
 
 rm -rf staging/linux-x86
@@ -27,12 +27,12 @@ mkdir -p staging/linux-x86
 (cd staging/linux-x86; unzip -q ${LINUX_ZIP})
 touch staging/linux-x86/MODULE_LICENSE_GPL
 
-#rm -rf staging/darwin-x86
-#mkdir staging/darwin-x86
-#(cd staging/darwin-x86; unzip -q ${DARWIN_ZIP})
-#touch staging/darwin-x86/MODULE_LICENSE_GPL
+rm -rf staging/darwin-x86
+mkdir staging/darwin-x86
+(cd staging/darwin-x86; unzip -q ${DARWIN_ZIP})
+touch staging/darwin-x86/MODULE_LICENSE_GPL
 
-rm -f ${LINUX_ZIP} # ${DARWIN_ZIP}
+rm -f ${LINUX_ZIP} ${DARWIN_ZIP}
 
 # Copy the RBE toolchain inputs files from the previous version to the staging
 # directory.
@@ -46,7 +46,7 @@ git commit -m "Add JDK ${version} to staging
 
 Test: none"
 
-git rm -rf linux-x86 manifest.xml # darwin-x86
+git rm -rf linux-x86 darwin-x86 manifest.xml
 git mv staging/* .
 rmdir staging
 git commit -m "Switch to JDK $version" --edit
