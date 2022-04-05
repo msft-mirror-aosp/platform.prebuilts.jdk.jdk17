@@ -40,13 +40,8 @@ cp linux-x86/bin/*_remote_toolchain_inputs staging/linux-x86/bin
 
 version=$(staging/linux-x86/bin/java -version 2>&1 | grep "OpenJDK Runtime Environment" | sed -e 's/.*(\(.*\))/\1/')
 
-# Commit to staging
-git add staging
-git commit -m "Add JDK ${version} to staging
-
-Test: none"
-
-git rm -rf linux-x86 darwin-x86 manifest.xml
-git mv staging/* .
+rm -rf linux-x86 darwin-x86 manifest.xml
+mv staging/* .
 rmdir staging
-git commit -m "Switch to JDK $version" --edit
+git add linux-x86 darwin-x86 manifest.xml
+git commit -m "Update to JDK $version" --edit
