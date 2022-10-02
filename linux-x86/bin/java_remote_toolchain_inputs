@@ -1,4 +1,4 @@
-../lib/jli/libjli.so
+../lib/libjli.so
 ../lib/jvm.cfg
 ../lib/server/libjvm.so
 ../lib/libverify.so
