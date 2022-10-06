@@ -37,7 +37,7 @@ touch staging/darwin-x86/MODULE_LICENSE_GPL
 rm -rf staging/darwin-arm64
 mkdir staging/darwin-arm64
 (cd staging/darwin-arm64; unzip -q ${DARWIN_ARM64_ZIP})
-(cp -r staging/darwin-arm64/jdk-17.0.2.jdk/Contents/Home/* staging/darwin-arm64; rm -rf staging/darwin-arm64/jdk-17.0.2.jdk)
+(cp -r staging/darwin-arm64/Contents/Home/* staging/darwin-arm64; rm -rf staging/darwin-arm64/jdk-17.0.2.jdk)
 touch staging/darwin-x86/MODULE_LICENSE_GPL
 
 rm -f ${LINUX_ZIP} ${DARWIN_ZIP} ${DARWIN_ARM64_ZIP}
