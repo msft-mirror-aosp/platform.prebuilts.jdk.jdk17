@@ -45,7 +45,7 @@
 
   <project path="toolchain/jdk/jdk11" name="toolchain/jdk/jdk11" revision="98e7de18587f7de9209a001333ab27285ca81301" />
 
-  <project path="toolchain/jdk/jdk17" name="toolchain/jdk/jdk17" revision="7348a148818711ea1abbf940fc738a668ffd0091" />
+  <project path="toolchain/jdk/jdk17" name="toolchain/jdk/jdk17" revision="a3f76c70e9f33a9a7ac0ca9b5b3c28ba3abbf454" />
 
   <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" revision="259894d58f3ad5b4c692bc3065b07a1d86d02cb7" />
 
@@ -61,7 +61,7 @@
 
   <project path="prebuilts/jdk/jdk11" name="platform/prebuilts/jdk/jdk11" clone-depth="1" revision="01125e0674e08a209052e8b320ef2f59da32fe30" />
 
-  <project path="prebuilts/jdk/jdk17" name="platform/prebuilts/jdk/jdk17" clone-depth="1" revision="e10f79bfa0c161310f3690b3630f1518207ab045" />
+  <project path="prebuilts/jdk/jdk17" name="platform/prebuilts/jdk/jdk17" clone-depth="1" revision="e3849576b236b795e0c69427c008c99167ee3e16" />
 
   <project path="prebuilts/jdk/studio" name="platform/prebuilts/studio/jdk" revision="323385584de2dd8ce19b2043ec86376e479ddb49" clone-depth="1" remote="goog" />
 
