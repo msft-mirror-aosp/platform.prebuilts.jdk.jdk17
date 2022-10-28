@@ -7,7 +7,7 @@
         <key>CFBundleExecutable</key>
         <string>libjli.dylib</string>
         <key>CFBundleGetInfoString</key>
-        <string>OpenJDK 17.0.4.1+0-jb17.0.4.1b469.62-9157099</string>
+        <string>OpenJDK 17.0.4.1+0-jb17.0.4.1b469.62-9205083</string>
         <key>CFBundleIdentifier</key>
         <string>net.java.openjdk.jdk</string>
         <key>CFBundleInfoDictionaryVersion</key>
