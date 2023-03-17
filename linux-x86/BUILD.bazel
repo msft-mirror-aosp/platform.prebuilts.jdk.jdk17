@@ -1,0 +1,22 @@
+load("@bazel_tools//tools/jdk:local_java_repository.bzl", "local_java_runtime")
+
+package(default_visibility = ["//visibility:public"])
+
+java_runtime(
+    name = "jdk17_runtime",
+    srcs = glob(["**"]),
+)
+
+local_java_runtime(
+    name = "jdk17",
+    exec_compatible_with = ["//build/bazel/platforms/os:linux"],
+    java_home = None,
+    runtime_name = ":jdk17_runtime",
+    version = "17",
+)
+
+filegroup(
+    name = "jar",
+    srcs = ["bin/jar"],
+    data = [":jdk17_runtime"],
+)
