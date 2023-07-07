@@ -238,8 +238,8 @@ java/lang/ref/Reference$1
 java/lang/ref/Finalizer$FinalizerThread
 jdk/internal/access/JavaLangAccess
 java/lang/System$2
-jdk/internal/misc/VM
 jdk/internal/util/SystemProps
+jdk/internal/misc/VM
 jdk/internal/util/SystemProps$Raw
 java/nio/charset/Charset
 java/nio/charset/spi/CharsetProvider
