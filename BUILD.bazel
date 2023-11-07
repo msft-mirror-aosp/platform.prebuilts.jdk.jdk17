@@ -10,7 +10,7 @@ java_runtime(
 
 local_java_runtime(
     name = "jdk17",
-    exec_compatible_with = ["//build/bazel_common_rules/platforms/os:linux"],
+    exec_compatible_with = ["//build/bazel/platforms/os:linux"],
     java_home = None,
     runtime_name = ":jdk17_runtime",
     version = "17",
