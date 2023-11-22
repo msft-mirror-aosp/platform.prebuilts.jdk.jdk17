@@ -62,7 +62,6 @@ prebuilt_build_tool {
                 "darwin-x86/lib/libnet.dylib",
                 "darwin-x86/lib/tzdb.dat",
                 "darwin-x86/lib/libawt.dylib",
-                "darwin-x86/lib/libawt_headless.dylib",
                 "darwin-x86/lib/libjavajpeg.dylib",
                 "darwin-x86/lib/liblcms.dylib",
                 "darwin-x86/lib/libmanagement.dylib",
