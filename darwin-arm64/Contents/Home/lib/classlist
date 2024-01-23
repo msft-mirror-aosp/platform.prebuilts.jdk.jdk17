@@ -411,7 +411,6 @@ java/security/SecureClassLoader$CodeSourceKey
 java/security/SecureClassLoader$DebugHolder
 java/security/Security
 java/security/Security$1
-java/security/Security$2
 java/security/UnresolvedPermission
 java/security/cert/Certificate
 java/text/AttributedCharacterIterator$Attribute
@@ -903,7 +902,6 @@ jdk/internal/access/JavaNetURLAccess
 jdk/internal/access/JavaNetUriAccess
 jdk/internal/access/JavaNioAccess
 jdk/internal/access/JavaSecurityAccess
-jdk/internal/access/JavaSecurityPropertiesAccess
 jdk/internal/access/JavaUtilJarAccess
 jdk/internal/access/JavaUtilResourceBundleAccess
 jdk/internal/access/JavaUtilZipFileAccess
@@ -942,7 +940,6 @@ jdk/internal/loader/NativeLibraries
 jdk/internal/loader/NativeLibraries$1
 jdk/internal/loader/NativeLibraries$LibraryPaths
 jdk/internal/loader/NativeLibraries$NativeLibraryImpl
-jdk/internal/loader/NativeLibraries$NativeLibraryImpl$1
 jdk/internal/loader/NativeLibrary
 jdk/internal/loader/Resource
 jdk/internal/loader/URLClassPath
@@ -1129,13 +1126,11 @@ sun/nio/fs/UnixUriUtils
 sun/nio/fs/Util
 sun/reflect/annotation/AnnotationParser
 sun/security/action/GetBooleanAction
-sun/security/action/GetIntegerAction
 sun/security/action/GetPropertyAction
 sun/security/util/Debug
 sun/security/util/FilePermCompat
 sun/security/util/LazyCodeSourcePermissionCollection
 sun/security/util/SecurityProperties
-sun/security/util/SignatureFileVerifier
 sun/text/resources/cldr/FormatData
 sun/util/calendar/AbstractCalendar
 sun/util/calendar/BaseCalendar
