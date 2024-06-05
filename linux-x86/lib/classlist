@@ -239,8 +239,8 @@ java/lang/ref/Finalizer$FinalizerThread
 jdk/internal/access/JavaLangAccess
 java/lang/System$2
 jdk/internal/util/SystemProps
-jdk/internal/misc/VM
 jdk/internal/util/SystemProps$Raw
+jdk/internal/misc/VM
 java/nio/charset/Charset
 java/nio/charset/spi/CharsetProvider
 sun/nio/cs/StandardCharsets
