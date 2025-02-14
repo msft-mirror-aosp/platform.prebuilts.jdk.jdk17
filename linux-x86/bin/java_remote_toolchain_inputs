@@ -1,4 +1,5 @@
 ../lib/libjli.so
+../lib/jrt-fs.jar
 ../lib/jvm.cfg
 ../lib/server/libjvm.so
 ../lib/libverify.so
