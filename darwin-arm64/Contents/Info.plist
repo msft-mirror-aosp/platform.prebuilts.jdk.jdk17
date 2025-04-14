@@ -7,17 +7,17 @@
         <key>CFBundleExecutable</key>
         <string>libjli.dylib</string>
         <key>CFBundleGetInfoString</key>
-        <string>OpenJDK 17.0.4.1+0-jb17.0.4.1b469.62-9205083</string>
+        <string>OpenJDK 17.0.9+0-17.0.9b1000.46-11116395</string>
         <key>CFBundleIdentifier</key>
         <string>net.java.openjdk.jdk</string>
         <key>CFBundleInfoDictionaryVersion</key>
         <string>7.0</string>
         <key>CFBundleName</key>
-        <string>OpenJDK 17.0.4.1</string>
+        <string>OpenJDK 17.0.9</string>
         <key>CFBundlePackageType</key>
         <string>BNDL</string>
         <key>CFBundleShortVersionString</key>
-        <string>17.0.4.1</string>
+        <string>17.0.9</string>
         <key>CFBundleSignature</key>
         <string>????</string>
         <key>CFBundleVersion</key>
@@ -35,11 +35,11 @@
                 <key>JVMMinimumSystemVersion</key>
                 <string>11.00.00</string>
                 <key>JVMPlatformVersion</key>
-                <string>17.0.4.1</string>
+                <string>17.0.9</string>
                 <key>JVMVendor</key>
                 <string>JetBrains s.r.o.</string>
                 <key>JVMVersion</key>
-                <string>17.0.4.1</string>
+                <string>17.0.9</string>
         </dict>
 </dict>
 </plist>
